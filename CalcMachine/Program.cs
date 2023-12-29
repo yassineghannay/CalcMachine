@@ -965,7 +965,7 @@ namespace CalcMachine
                 |FARENHEIT - {ConverterBoiler(4, unit, number, 3)}           
                 |____________________________________________________________________________"); 
             }
-
+            // Switch case for unit conversions
             public static double ConverterBoiler(int Type, string Unit, double Number, int Ar)
             {
                 string Typer = Convert.ToString(Type);
@@ -1101,6 +1101,7 @@ namespace CalcMachine
             Console.SetError(streamwriter);
         }
         public static void MainMenu()
+                                  
             {
             bool whiler = true;
             while (whiler is true)
@@ -1122,7 +1123,7 @@ namespace CalcMachine
                 string OpeningMenu = Console.ReadLine() ?? "1";
 
                 OpeningMenu = OpeningMenu.ToUpper(); //Case insensitiviness
-
+                //Switch case for more specific menu functions 
                 switch (OpeningMenu)
                 {
 
